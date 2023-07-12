@@ -1,5 +1,6 @@
 package com.myl.imgopt.extension
 
+import com.myl.imgopt.optimizer.Constants
 
 /**
  * @Author: mayunlong

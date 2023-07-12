@@ -3,7 +3,7 @@ package com.myl.imgopt.optimizer.impl
 import com.myl.imgopt.optimizer.Optimizer
 import com.myl.imgopt.util.Logger
 import org.gradle.api.Project
-
+import com.myl.imgopt.util.ZopflipngUtil
 /**
  * @Author: mayunlong
  * @Created: 16/7/4 14:43.

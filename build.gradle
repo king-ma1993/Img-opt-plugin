@@ -1,4 +1,12 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+
+    dependencies {
+        classpath 'com.myl.imgopt:ImgOptimizerPlugin:1.0.0-SNAPSHOT'
+    }
+
+}
+
 plugins {
     id 'com.android.application' version '8.0.2' apply false
     id 'com.android.library' version '8.0.2' apply false

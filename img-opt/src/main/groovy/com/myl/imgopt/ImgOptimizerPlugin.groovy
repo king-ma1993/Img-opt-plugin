@@ -6,6 +6,7 @@ import com.android.build.gradle.api.BaseVariant
 import com.myl.imgopt.extension.ImgOptimizerExtension
 import com.myl.imgopt.optimizer.Constants
 import org.gradle.api.DomainObjectCollection
+import com.myl.imgopt.task.ImgOptimizerTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 
