@@ -2,13 +2,29 @@
 buildscript {
 
     dependencies {
-        classpath 'com.myl.imgopt:ImgOptimizerPlugin:1.0.0-SNAPSHOT'
+        classpath 'com.myl.imgopt:ImgOptimizerPlugin:1.0.0'
+//        classpath 'com.bmuschko:gradle-nexus-plugin:2.3.1'
+//        classpath 'io.johnsonlee.sonatype-publish-plugin:1.6.1'
     }
 
 }
+
+
 
 plugins {
     id 'com.android.application' version '8.0.2' apply false
     id 'com.android.library' version '8.0.2' apply false
     id 'org.jetbrains.kotlin.android' version '1.7.20' apply false
+}
+
+allprojects {
+    repositories {
+        maven {
+            url "ZrgkLocalRepo"
+        }
+        google()
+        mavenCentral()
+        jcenter()
+
+    }
 }

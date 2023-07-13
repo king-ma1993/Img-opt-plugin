@@ -1,5 +1,29 @@
+
+//settingsEvaluated { settings ->
+//    // 配置禁用settings仓库优先
+//    settings.pluginManagement.repositories {
+//        exclusiveContent {
+//            forRepository {
+//                mavenLocal()
+//            }
+//        }
+//    }
+//}
+
+//apply plugin: 'io.johnsonlee.sonatype-publish-plugin'
+
+plugins {
+//    id("io.johnsonlee.sonatype-publish-plugin") version "1.8.0"
+//    id "com.vanniktech.maven.publish" version "0.25.3"
+}
+
+
 apply plugin: 'groovy'
+//apply plugin: 'com.bmuschko.nexus'
 apply from: 'maven-publish.gradle'
+
+group = "com.myl.imgopt"
+version = "1.0.0"
 
 
 sourceCompatibility = JavaVersion.VERSION_11
@@ -11,3 +35,4 @@ dependencies {
     implementation localGroovy()
     compileOnly 'com.android.tools.build:gradle:4.2.0'
 }
+

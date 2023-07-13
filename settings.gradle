@@ -1,23 +1,27 @@
 pluginManagement {
     repositories {
+        maven {
+            url "ZrgkLocalRepo"
+        }
         google()
         mavenCentral()
         gradlePluginPortal()
-        maven {
-            url "ZrgkLocalRepo"
-        }
+        jcenter()
+
     }
 }
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        maven {
-            url "ZrgkLocalRepo"
-        }
-    }
-}
+//dependencyResolutionManagement {
+//    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+//    repositories {
+//        google()
+//        mavenCentral()
+//        jcenter()
+////        maven {
+////            url "ZrgkLocalRepo"
+////        }
+//    }
+//}
 rootProject.name = "Img-opt-gradle-plugin"
 include ':app'
 include ':img-opt'
+
